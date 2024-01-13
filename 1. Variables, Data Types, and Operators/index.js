@@ -67,6 +67,10 @@ console.log(0 in food);
 console.log(3 in food); 
 console.log(6 in food); 
 
+const makeup = {blush: "careine oil control", concealer: "maybelline fit me", cushion: "sace lady oil control" };
+console.log("blush" in makeup);
+console.log("concealer" in makeup); 
+
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
 // Answer: [] == false evaluates to true. The empty array is converted to a string which is an empty string,
