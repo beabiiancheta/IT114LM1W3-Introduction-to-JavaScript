@@ -26,6 +26,7 @@ console.log('Concatenated String:', concatenatedString);
 
 // Checkpoint 5.1 Summarize what map, filter, and reduce do
 // Answer: 
-// Map, it creates a new array by applying a function to each element in an existing array.
-// Filter, it creates a new array by selecting elements from an existing array based on a condition.
-// Reduce, it applies a function to each element of an array, resulting in a single accumulated value.
+
+// Map transforms each element of an array using a provided function, creating a new array.
+// Filter selects elements from an array based on a specified condition, generating a new array.
+// Reduce applies a function to each array element, producing a single accumulated value.
