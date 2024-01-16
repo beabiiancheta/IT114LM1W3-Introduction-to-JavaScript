@@ -22,9 +22,9 @@ if  (randomNumber % 2 === 0) {
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 if (randomNumber % 3 === 0 && randomNumber % 5 === 0) {
     console.log("fizzbuzz");
-} else if (randomNumber % 3) {
+} else if (randomNumber % 3 === 0) {
     console.log("fizz");
-} else if (randomNumber % 5) {
+} else if (randomNumber % 5 === 0) {
     console.log("buzz");
 } else {
     console.log(randomNumber);
@@ -49,9 +49,10 @@ for (let i = 1; i <= n; i++) {
 
 const list = ["apple", "banana", "cherry", "date", "elderberry"];
 // TODO 2.6 Use a while loop to display all the values in the list
-while (index < list.length) {
-    console.log(list[index]);
-    index++;
+i = 0
+while (i < list.length) {
+    console.log(list[i])
+    i++
 }
 
 // Checkpoint 2.3 What is the difference between do while and while loop?
@@ -59,14 +60,17 @@ while (index < list.length) {
 // while for while loop checks the condition before executing the block.
 
 // TODO 2.7 Use a for of loop to display all the values in the list
-for (const value of list) {
-    console.log(value);
+// Your code here
+for (i = 0; i < list.length; i++) {
+    console.log(list[i])
 }
 
 // TODO 2.8 Use a for in loop to display all the values in the list
-for (const value in list) {
-    console.log(list[index]);
+// Your code here
+for (let value of list) {
+    console.log(value)
 }
+
 
 // TODO 2.9 Use the for each method of the list to display all its values 
 list.forEach(value => console.log(value));
@@ -87,9 +91,9 @@ try {
         console.log(numerator / denominator);
     }
 } catch (error) {
-    console.error(error.message);
+    console.error(`Error Message: ${error.message}`)
 } finally {
-    console.log("cleaning up resources");
+    console.log("Cleaning up resources")
 }
 
 
